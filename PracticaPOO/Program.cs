@@ -24,7 +24,6 @@ namespace PracticaPOO
         /// <summary>
         /// Método para calcular el área de un círculo
         /// </summary>
-        /// <param name="radio"></param>
         /// <returns>Devuelve el área del círculo</returns>
         public double CalcularArea(double radio)
         {
