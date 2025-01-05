@@ -7,12 +7,15 @@ namespace PracticaPOO
         static void Main(string[] args)
         {
             //Instanciar clase o crear objeto con valor new
-            Circle circle1 = new Circle();
-            Circle circle2 = new Circle();
-            Circle circle3 = new Circle();
-            Console.WriteLine($"El área del círculo es: {circle1.CalcularArea(5)}");
-            Console.WriteLine($"El área del círculo es: {circle2.CalcularArea(10)}");
-            Console.WriteLine($"El área del círculo es: {circle3.CalcularArea(8)}");
+            //Circle circle1 = new Circle();
+            //Circle circle2 = new Circle();
+            //Circle circle3 = new Circle();
+            //Console.WriteLine($"El área del círculo es: {circle1.CalcularArea(5)}");
+            //Console.WriteLine($"El área del círculo es: {circle2.CalcularArea(10)}");
+            //Console.WriteLine($"El área del círculo es: {circle3.CalcularArea(8)}");
+            ConvertirEuroADolar convertir1 = new ConvertirEuroADolar();
+            convertir1.CambiarValorEuro();
+            Console.WriteLine(convertir1.Convertir(100));
         }
     }
 
@@ -25,9 +28,35 @@ namespace PracticaPOO
         /// Método para calcular el área de un círculo
         /// </summary>
         /// <returns>Devuelve el área del círculo</returns>
-        public double CalcularArea(double radio)
+        public double CalcularArea(double radio) // métodos con public con PascalCase, sino con camelCase
         {
+            Console.WriteLine(PI);
             return PI * Math.Pow(radio,2);
+        }
+    }
+
+    class ConvertirEuroADolar
+    {
+        private double euro = 1.03;
+
+        public double Convertir(double value)
+        {
+            return euro * value;
+        }
+
+        public double CambiarValorEuro()
+        {
+            Console.WriteLine("Escriba a cuánto cotiza el euro");
+            try
+            {
+            euro = Convert.ToDouble(Console.ReadLine());
+            return euro;
+            }
+            catch(FormatException)
+            {
+                Console.WriteLine("Ingreso inválido. Verifique solo ingresar números con punto para el decimal");
+                return euro = 0;
+            }
         }
     }
 }
