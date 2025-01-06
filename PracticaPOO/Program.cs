@@ -50,7 +50,8 @@ namespace PracticaPOO
             try
             {
             euro = Convert.ToDouble(Console.ReadLine());
-            return euro;
+                if (euro <= 0) Console.WriteLine("El importe debe ser mayor a 0");
+                return euro=0;
             }
             catch(FormatException)
             {
