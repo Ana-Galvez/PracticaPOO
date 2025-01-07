@@ -96,6 +96,8 @@ namespace PracticaPOO
             this.ancho = ancho;
         }
      }
+
+    // la otra parte de la clase Coche
      partial class Coche
      {
         // método setter para setear propiedades
