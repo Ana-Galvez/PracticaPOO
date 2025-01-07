@@ -13,9 +13,9 @@ namespace PracticaPOO
             //Console.WriteLine($"El área del círculo es: {circle1.CalcularArea(5)}");
             //Console.WriteLine($"El área del círculo es: {circle2.CalcularArea(10)}");
             //Console.WriteLine($"El área del círculo es: {circle3.CalcularArea(8)}");
-            ConvertirEuroADolar convertir1 = new ConvertirEuroADolar();
-            convertir1.CambiarValorEuro();
-            Console.WriteLine(convertir1.Convertir(100));
+            //ConvertirEuroADolar convertir1 = new ConvertirEuroADolar();
+            //convertir1.CambiarValorEuro();
+            //Console.WriteLine(convertir1.Convertir(100));
         }
     }
 
@@ -58,6 +58,24 @@ namespace PracticaPOO
                 Console.WriteLine("Ingreso inválido. Verifique solo ingresar números con punto para el decimal");
                 return euro = 0;
             }
+        }
+    }
+
+    class Coche
+    {
+
+        private byte ruedas;
+        private double largo;
+        private double ancho;
+        private bool aire;
+
+        // Constructor: método con el mismo nombre que la clase donde se ponen los estados iniciales para los objetos
+        // public más nombre, sin tipo de datos que retorne
+        public Coche()
+        {
+            ruedas = 4;
+            largo = 2300.5;
+            ancho = 1500;
         }
     }
 }
