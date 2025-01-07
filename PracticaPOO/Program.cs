@@ -21,7 +21,7 @@ namespace PracticaPOO
             Coche coche2 = new Coche(2050.5,1600);
             coche2.SetExtrasCoche(true,false);
             coche2.GetInfoCoche();
-            coche2.GetCocheConExtras();
+
         }
     }
 
@@ -87,31 +87,27 @@ namespace PracticaPOO
         }
 
         // sobrecarga de constructores
-        public Coche(double largoCoche,double anchoCoche)
+        public Coche(double largo,double ancho)
         {
             ruedas = 4;
-            largo = largoCoche;
-            ancho = anchoCoche;
+            this.largo = largo;
+            this.ancho = ancho;
         }
 
         // método setter para setear propiedades
-        public void SetExtrasCoche(bool aireCoche,bool gncCoche)
+        public void SetExtrasCoche(bool aire,bool gnc)
         {
-            aire=aireCoche;
-            gnc=gncCoche;
+            this.aire=aire;
+            this.gnc=gnc;
         }
 
-        public void GetCocheConExtras()
-        {
-            Console.WriteLine("Los datos de los extras del coche son: \nAire: " + aire + "\nGNC: " + gnc);
-        }
         /// <summary>
         /// Muestra cantidad de ruedas, largo y ancho del coche
         /// </summary>
         // Método getter para mostrar info
         public void GetInfoCoche()
         {
-            Console.WriteLine("Los datos del coche son: \nRuedas: " + ruedas + "\nLargo: " + largo + "\nAncho: " + ancho);
+            Console.WriteLine("Los datos del coche son: \nRuedas: " + ruedas + "\nLargo: " + largo + "\nAncho: " + ancho + "\nAire: "+ aire + "\nGNC: "+ gnc);
         }
     }
 }
