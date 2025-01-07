@@ -17,9 +17,11 @@ namespace PracticaPOO
             //convertir1.CambiarValorEuro();
             //Console.WriteLine(convertir1.Convertir(100));
             Coche coche1 = new Coche();
-            coche1.getInfoCoche();
+            coche1.GetInfoCoche();
             Coche coche2 = new Coche(2050.5,1600);
-            coche2.getInfoCoche();
+            coche2.SetExtrasCoche(true,false);
+            coche2.GetInfoCoche();
+            coche2.GetCocheConExtras();
         }
     }
 
@@ -71,6 +73,8 @@ namespace PracticaPOO
         private byte ruedas;
         private double largo;
         private double ancho;
+        private bool aire;
+        private bool gnc;
 
         // Constructor: método con el mismo nombre que la clase donde se ponen los estados iniciales para los objetos
         // Si no se crea el constructor sin parámetros, C# internamente lo crea.
@@ -90,14 +94,24 @@ namespace PracticaPOO
             ancho = anchoCoche;
         }
 
+        // método setter para setear propiedades
+        public void SetExtrasCoche(bool aireCoche,bool gncCoche)
+        {
+            aire=aireCoche;
+            gnc=gncCoche;
+        }
 
+        public void GetCocheConExtras()
+        {
+            Console.WriteLine("Los datos de los extras del coche son: \nAire: " + aire + "\nGNC: " + gnc);
+        }
         /// <summary>
         /// Muestra cantidad de ruedas, largo y ancho del coche
         /// </summary>
         // Método getter para mostrar info
-        public void getInfoCoche()
+        public void GetInfoCoche()
         {
-            Console.WriteLine("Los datos del conche son: \nRuedas: " + ruedas + "\nLargo: " + largo + "\nAncho: " + ancho);
+            Console.WriteLine("Los datos del coche son: \nRuedas: " + ruedas + "\nLargo: " + largo + "\nAncho: " + ancho);
         }
     }
 }
