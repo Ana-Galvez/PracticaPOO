@@ -67,7 +67,9 @@ namespace PracticaPOO
         }
     }
 
-    class Coche
+
+    // división de la clase con la palabra partial
+    partial class Coche
     {
 
         private byte ruedas;
@@ -93,12 +95,14 @@ namespace PracticaPOO
             this.largo = largo;
             this.ancho = ancho;
         }
-
+     }
+     partial class Coche
+     {
         // método setter para setear propiedades
-        public void SetExtrasCoche(bool aire,bool gnc)
+        public void SetExtrasCoche(bool aire, bool gnc)
         {
-            this.aire=aire;
-            this.gnc=gnc;
+            this.aire = aire;
+            this.gnc = gnc;
         }
 
         /// <summary>
