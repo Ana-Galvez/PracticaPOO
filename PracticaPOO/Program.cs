@@ -18,6 +18,8 @@ namespace PracticaPOO
             //Console.WriteLine(convertir1.Convertir(100));
             Coche coche1 = new Coche();
             coche1.getInfoCoche();
+            Coche coche2 = new Coche(2050.5,1600);
+            coche2.getInfoCoche();
         }
     }
 
@@ -69,15 +71,23 @@ namespace PracticaPOO
         private byte ruedas;
         private double largo;
         private double ancho;
-        private bool aire;
 
         // Constructor: método con el mismo nombre que la clase donde se ponen los estados iniciales para los objetos
+        // Si no se crea el constructor sin parámetros, C# internamente lo crea.
         // public más nombre, sin tipo de datos que retorne
         public Coche()
         {
             ruedas = 4;
             largo = 2300.5;
             ancho = 1500;
+        }
+
+        // sobrecarga de constructores
+        public Coche(double largoCoche,double anchoCoche)
+        {
+            ruedas = 4;
+            largo = largoCoche;
+            ancho = anchoCoche;
         }
 
 
