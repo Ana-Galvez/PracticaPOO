@@ -16,6 +16,8 @@ namespace PracticaPOO
             //ConvertirEuroADolar convertir1 = new ConvertirEuroADolar();
             //convertir1.CambiarValorEuro();
             //Console.WriteLine(convertir1.Convertir(100));
+            Coche coche1 = new Coche();
+            coche1.getInfoCoche();
         }
     }
 
@@ -76,6 +78,16 @@ namespace PracticaPOO
             ruedas = 4;
             largo = 2300.5;
             ancho = 1500;
+        }
+
+
+        /// <summary>
+        /// Muestra cantidad de ruedas, largo y ancho del coche
+        /// </summary>
+        // Método getter para mostrar info
+        public void getInfoCoche()
+        {
+            Console.WriteLine("Los datos del conche son: \nRuedas: " + ruedas + "\nLargo: " + largo + "\nAncho: " + ancho);
         }
     }
 }
