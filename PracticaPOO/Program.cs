@@ -105,6 +105,9 @@ namespace PracticaPOO
         {
             this.aire = aire;
             this.gnc = gnc;
+
+            // TODO sirve para saber donde seguir y vs en ver lista de tarea lo muestra
+            //TODO:
         }
 
         /// <summary>
