@@ -22,6 +22,7 @@ namespace PracticaPOO
             //coche2.SetExtrasCoche(true,false);
             //coche2.GetInfoCoche();
             CrearPunto();
+            Console.Clear();
            
         }
 

@@ -7,6 +7,7 @@ namespace PracticaPOO
         private int x;
         private int y;
         private static int contadorObjetos = 0;
+        //LAS CONSTANTES EN CLASE SE CONSIDERAN STATIC
         public Punto(int x,int y)
         {
             this.x = x;
