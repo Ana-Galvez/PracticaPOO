@@ -22,8 +22,13 @@ namespace PracticaPOO
             //coche2.SetExtrasCoche(true,false);
             //coche2.GetInfoCoche();
             CrearPunto();
-            Console.Clear();
-           
+            // CLASE ANÓNIMA: solo propiedades (no se pueden crear métodos)
+            var nombre1 = new { Nombre = "Ana", Edad = 42 };
+            Console.WriteLine(nombre1.Nombre);
+
+            var nombre2 = new { Nombre = "tatin", Edad = 40 };
+            nombre1 = nombre2;
+
         }
 
         static void CrearPunto()
