@@ -22,13 +22,17 @@ namespace PracticaPOO
             //coche2.SetExtrasCoche(true,false);
             //coche2.GetInfoCoche();
             CrearPunto();
+           
         }
 
         static void CrearPunto()
         {
             Punto punto1 = new Punto();
             Punto punto2 = new Punto(128,80);
+            Punto punto3 = new Punto(128,80);
+            Punto punto4 = new Punto(128,80);
             Console.WriteLine(punto1.DistanciaEntrePuntos(punto2));
+            Console.WriteLine(Punto.ContarObjetosCreados());
         }
     }
 

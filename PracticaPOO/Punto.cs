@@ -6,16 +6,19 @@ namespace PracticaPOO
     {
         private int x;
         private int y;
+        private static int contadorObjetos = 0;
         public Punto(int x,int y)
         {
             this.x = x;
             this.y = y;
+            contadorObjetos++;
         }
 
         public Punto()
         {
             this.x = 0;
             this.y = 0;
+            contadorObjetos++;
         }
 
         public double DistanciaEntrePuntos(Punto punto2)
@@ -27,6 +30,10 @@ namespace PracticaPOO
             return DistanciaPuntos;
         }
 
+        public static int ContarObjetosCreados()
+        {
+            return contadorObjetos;
+        }
 
     }
 }
