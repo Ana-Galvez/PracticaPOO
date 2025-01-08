@@ -26,7 +26,9 @@ namespace PracticaPOO
 
         static void CrearPunto()
         {
-            Punto punto1 = new Punto(120, 300);
+            Punto punto1 = new Punto();
+            Punto punto2 = new Punto(128,80);
+            Console.WriteLine(punto1.DistanciaEntrePuntos(punto2));
         }
     }
 
