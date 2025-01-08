@@ -22,6 +22,7 @@ namespace PracticaPOO
         {
             int xDif = this.x - punto2.x;
             int yDif = this.y - punto2.y;
+
             double DistanciaPuntos = Math.Sqrt(Math.Pow(xDif, 2) + Math.Pow(yDif, 2));
             return DistanciaPuntos;
         }
