@@ -16,12 +16,17 @@ namespace PracticaPOO
             //ConvertirEuroADolar convertir1 = new ConvertirEuroADolar();
             //convertir1.CambiarValorEuro();
             //Console.WriteLine(convertir1.Convertir(100));
-            Coche coche1 = new Coche();
-            coche1.GetInfoCoche();
-            Coche coche2 = new Coche(2050.5,1600);
-            coche2.SetExtrasCoche(true,false);
-            coche2.GetInfoCoche();
+            //Coche coche1 = new Coche();
+            //coche1.GetInfoCoche();
+            //Coche coche2 = new Coche(2050.5,1600);
+            //coche2.SetExtrasCoche(true,false);
+            //coche2.GetInfoCoche();
+            CrearPunto();
+        }
 
+        static void CrearPunto()
+        {
+            Punto punto1 = new Punto(120, 300);
         }
     }
 
