@@ -6,6 +6,17 @@ namespace PracticaPOO
     {
         static void Main(string[] args)
         {
+            // POO
+            // Paradigma de programación que se basa en objetos de la vida real
+            // Se puede reutilizar al ser modular gracias a las clases y permite trabajar las excepciones y gracias a las clases
+            // si una parte no funciona, las otras seguirán funcionando
+            // 1- Encapsulamiento: cada clase bloquea su código hacia afuera
+            // 2- Herencia o inheritance
+            // 3- Polimorfismo
+            // 4- Clase: Plantilla o molde donde se muestran las características comunes de un grupo de objetos
+            // 5- Objetos: son ejemplares de una clase
+            //      5.1- Propiedades o atributos = variables
+            //      5.2- Métodos: funciones
             //Instanciar clase o crear objeto con valor new
             //Circle circle1 = new Circle();
             //Circle circle2 = new Circle();
