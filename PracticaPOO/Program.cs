@@ -136,4 +136,7 @@ namespace PracticaPOO
             Console.WriteLine("Los datos del coche son: \nRuedas: " + ruedas + "\nLargo: " + largo + "\nAncho: " + ancho + "\nAire: "+ aire + "\nGNC: "+ gnc);
         }
     }
+    /*HERENCIA: es como el árbol genealógico de clases. Es poder usar métodos y/o propiedades de una clase en otra clase
+     (reutilización). Se puede usar el principio de diseño de herencia "es un". Ej: un jefe es un empleado: sí, entonces jefe hereda de empleado
+      Ver propiedades y métodos comunes*/
 }
